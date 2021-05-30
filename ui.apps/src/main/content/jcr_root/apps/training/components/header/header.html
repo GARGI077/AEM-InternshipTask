@@ -1,0 +1,19 @@
+
+<sly data-sly-use.model="com.aem.training.site.core.models.HeroModel" >
+    <!--<div class="slides" data-sly-list="${model.heroSlides}">
+        <p>${item.title}</p>
+        <img src="${item.image}">
+        <a href=""></a>
+    </div>-->
+
+
+    <nav id="navbar">
+
+
+        <ul data-sly-list="${model.heroSlides}">
+            <li><img src="${item.image}"></li>
+
+            <li class="item"><a href="${item.link}">${item.title}</a></li>
+
+    </nav>
+</sly>

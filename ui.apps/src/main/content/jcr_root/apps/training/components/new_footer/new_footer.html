@@ -1,0 +1,13 @@
+<sly data-sly-use.model="com.aem.training.site.core.models.FooterModel" >
+    <div id="page">
+        <div id="footer">
+            <div>
+                <div class="connect" data-sly-list="${model.heroSlides}">
+                    <a href="${item.link}"><img src="${item.image}">${item.title}</a>
+
+                </div>
+                <p>${properties.text}</p>
+            </div>
+        </div>
+    </div>
+</sly>
